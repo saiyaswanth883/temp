@@ -1,0 +1,135 @@
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fac850;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Aligarh', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Aligarh', sans-serif;
+}
+
+/* Accordion Css */
+@font-face {
+    font-family: 'Aligarh';
+    src: local('Aligarh Medium'), local('Aligarh-Medium'),
+        url('../text/Aligarh-Medium/Aligarh-Medium.woff2') format('woff2'),
+        url('../text/Aligarh-Medium/Aligarh-Medium.woff') format('woff'),
+        url('../text/Aligarh-Medium/Aligarh-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Aligarh';
+}
+
+.v-heading-v2 {
+    display: block;
+    margin-bottom: 25px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.accordion-item {
+    font-size: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.accordion-item h2 button {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #bc5148;
+    position: relative;
+    -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 0;
+}
+
+.accordion-item h2 button .fa {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.accordion-item h2 button:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.accordion-item h2 button.collapsed {
+    color: #000;
+}
+
+.accordion-item h2 button.collapsed.fa {
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion-item h2 button.collapsed.fa {
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion-item h2 button.collapsed:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.accordion-item .accordion-body {
+    padding-top: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fac850;
+    background: #fff;
+    border: none;
+}
+
+.accordion-button:focus {
+    border-color: #fff;
+}
+
+.coordinators {
+    padding: 3% 0 5% 0;
+}

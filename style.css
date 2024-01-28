@@ -1,0 +1,167 @@
+
+/* navbar */
+
+body {
+    background-color: #f7f7f7;
+    font-family: 'Aligarh','sans-serif';
+}
+@font-face {
+    font-family: 'Aligarh';
+    src: local('Aligarh Medium'), local('Aligarh-Medium'),
+        url('./text/Aligarh-Medium/Aligarh-Medium.woff2') format('woff2'),
+        url('./text/Aligarh-Medium/Aligarh-Medium.woff') format('woff'),
+        url('./text/Aligarh-Medium/Aligarh-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.logo {
+    padding-left: 7%;
+}
+
+#navbarNavDropdown {
+    padding-right: 10%;
+
+}
+
+.hover-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.hover-nav li {
+    float: left;
+}
+
+.hover-nav li a {
+    position: relative;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 12px;
+    text-decoration: none;
+    z-index: 0;
+}
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ nav ul li a:after {
+     content: '';
+     width: 0;
+     height: 3px;
+     background: #fac850;
+     position: absolute;
+     left: 0;
+     bottom: -6px;
+     transition: 0.5s;
+ }
+
+ nav ul li a:hover::after {
+     width: 100%
+ }
+
+
+/* carousel */
+.carousel-inner {
+    height: 0;
+    padding-bottom: 49%;
+    /* this sets carousel aspect ratio (4:1 here) 
+}
+
+.carousel-item {
+  position: absolute !important; /* Bootstrap is insistent */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-item img {
+    height: 100%;
+    padding-top: 92px;
+    /* Bootstrap handles width already */
+    object-fit: contain;
+    /* or 'contain' if you want stretch instead of crop */
+}
+
+
+/* event category */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #8f8f8f;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.row {
+    padding-top: 35px;
+}
+
+.card {
+    width: 100%;
+    max-width: 350px; 
+    margin: 0 auto 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+.container {
+    background-color: #f7f7f7; /* White background for the main content container */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.details {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-item img {
+        margin-bottom: 92px;
+        padding-top: 0px;
+    }
+    #carouselExampleIndicators
+    {
+    margin-top: 92px;
+    }
+}
