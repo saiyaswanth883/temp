@@ -21,6 +21,17 @@ a {
   text-decoration: none;
 }
 
+.image-section {
+  background-image: url('../img/mechmantra-poster.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .cs-soire {
   color: #484848; /* Adjusted text color */
   text-align: center;
