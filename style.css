@@ -15,6 +15,21 @@ body {
     font-style: normal;
 }
 
+* {
+    font-family: 'Aligarh', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Aligarh', sans-serif;
+}
+
+li {
+    font-family: 'Aligarh', sans-serif;
+}
+
+.navlink {
+    font-family: 'Aligarh', sans-serif;
+}
 
 .logo {
     padding-left: 7%;
