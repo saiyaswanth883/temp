@@ -98,7 +98,9 @@ li {
     left: 0;
 }
 
-
+.carousel-item img {
+    object-fit: cover;
+}
 
 /* event category */
 
