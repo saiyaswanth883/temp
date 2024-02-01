@@ -87,7 +87,7 @@ li {
 .carousel-inner {
     height: 0;
     padding-bottom: 49%;
-    /* this sets carousel aspect ratio (4:1 here) 
+    
 }
 
 .carousel-item {
@@ -98,13 +98,6 @@ li {
     left: 0;
 }
 
-.carousel-item img {
-    height: 100%;
-    padding-top: 92px;
-    /* Bootstrap handles width already */
-    object-fit: contain;
-    /* or 'contain' if you want stretch instead of crop */
-}
 
 
 /* event category */
